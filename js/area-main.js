@@ -22,7 +22,7 @@
             lineWidth: 1,
             font: '12px Arial',
             strokeStyle: 'rgba(180, 192, 197, 0.1)',
-            fillStyle: 'rgb(111, 133, 144, 0.7)',
+            fillStyle: 'rgba(111, 133, 144, 0.7)',
             textAlign: 'start'
         };
         priv.axleLabelsYCurrent = null;
@@ -31,7 +31,7 @@
             lineWidth: 1,
             font: '12px Arial',
             strokeStyle: 'rgba(111, 133, 144, 0.1)',
-            fillStyle: 'rgb(111, 133, 144, 0.7)'
+            fillStyle: 'rgba(111, 133, 144, 0.7)'
         };
         priv.axleLabelsXCurrent = null;
 
