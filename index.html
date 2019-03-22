@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=500, initial-scale=1, maximum-scale=1">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <title>Graph</title>
+        <script src="js/pre-tests.js"></script>
+
+        <script src="js/device-interface.js"></script>
+        <script src="js/constants.js"></script>
+        <script src="js/animation.js"></script>
+        <script src="js/area-axle-labels.js"></script>
+        <script src="js/area.js"></script>
+        <script src="js/area-main.js"></script>
+        <script src="js/bounding-rect.js"></script>
+        <script src="js/clone-template.js"></script>
+        <script src="js/color.js"></script>
+        <script src="js/get-json.js"></script>
+        <script src="js/graph-data.js"></script>
+        <script src="js/graph.js"></script>
+        <script src="js/html.js"></script>
+        <script src="js/line-basic.js"></script>
+        <script src="js/line.js"></script>
+        <script src="js/line-item.js"></script>
+        <script src="js/math.js"></script>
+        <script src="js/objects.js"></script>
+        <script src="js/point.js"></script>
+        <script src="js/range-box.js"></script>
+        <script src="js/range.js"></script>
+        <script src="js/x-point-info.js"></script>
+    </head>
+    <body>
+        <div class="graphs" data-el="graphs"></div>
+        <div class="graphs" data-el="graphs-my"></div>
+
+        <div class="light-mode">
+            <a id="light-mode-switch" href></a>
+        </div>
+
+        <div class="templates">
+            <div data-template="graph" class="graph">
+                <div class="name" data-el="name"></div>
+                <div class="graph-main" data-el="graph-main">
+                    <canvas data-el="area-main"></canvas>
+                    <div data-el="x-point" class="x-point-box">
+                        <div data-el="x-point-line" class="line"></div>
+                        <div data-el="x-point-points"></div>
+                        <div class="bubble">
+                            <div data-el="x-point-title" class="-title"></div>
+                            <div data-el="x-point-values" class="-values"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph-map" data-el="graph-map">
+                    <canvas data-el="area-map"></canvas>
+                </div>
+                <div class="buttons" data-el="buttons"></div>
+            </div>
+
+            <a data-template="graph-button" class="graph-button" href>
+                <span data-el="icon" class="icon"></span>
+                <span data-el="name" class="label"></span>
+            </a>
+
+            <div data-template="range-box" class="range-box">
+                <div data-el="shadow-left" class="shadow-block _left"></div>
+                <div data-el="shadow-right" class="shadow-block _right"></div>
+                <div data-el="slider-left" class="slider"></div>
+                <div data-el="slider-right" class="slider"></div>
+            </div>
+
+            <div data-template="x-point-point" class="point"></div>
+
+            <div data-template="x-point-value" class="point-value">
+                <div data-el="point-value"></div>
+                <div data-el="point-name"></div>
+            </div>
+        </div>
+        <script src="js/tests.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
