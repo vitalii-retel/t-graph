@@ -1,5 +1,5 @@
 (function () {
-    getJSON('../data/chart_data.json', function(data) {
+    getJSON('./data/chart_data.json', function(data) {
         const graphsEl = document.querySelector('[data-el="graphs"]');
         for (let i = 0; i < data.length; i++) {
             new Graph(
